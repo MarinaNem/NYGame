@@ -1,0 +1,115 @@
+body {
+    display: flex;
+    background-image: url(images/background.jpg);
+    background-size: 100% 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    position: absolute;
+    margin: 5px;
+    top: 1vw;
+    font-size: 4vw;
+    color: white;
+    text-shadow: #aab5c0 1px 1px 0, #aab5c0 2px 2px 0, #aab5c0 3px 3px 0, #aab5c0 4px 4px 0, #aab5c0 5px 5px 0;
+}
+
+.field{
+    display: flex;
+    height: 750px;
+    width: 650px;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: calc(25% - 10px);
+    height: calc(30% - 10px);
+    margin: 5px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform .5s;
+    border-radius: 11px;
+    box-shadow: 7px 7px 9px black;
+}
+
+.front, .back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.card.click{
+    transform: rotateY(180deg);
+}
+
+.front{
+    transform: rotateY(180deg);
+}
+
+.modal{
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(0,0,0,0.4);
+}
+
+.modal_window{
+    color: rgb(0, 88, 62);
+    font-size: 3vh;
+    text-shadow: #004128 1px 1px 1px;
+    display: block;
+    width: auto;
+    height: auto;
+    position: fixed;
+    border: 2px solid black;
+    border-radius: 20px;
+    background: white;
+    padding: 10px;
+    padding-right: 7%;
+    padding-left: 7%;
+    text-align: center;
+    background-image: url(images/modal.jpg);
+    background-size: cover;
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    right: 0.5vw;
+    font-size: 1.2vh;
+    font-weight: 700;
+}
+
+.goBack {
+    color: white;
+    text-shadow: 9px 6px 6px black, -2px 6px 6px black;
+    font-size: 2vw;
+    font-weight: 600;
+    position: absolute;
+    left:10px;
+    top:10px;
+    height: auto;
+    width:auto;
+    padding-left: 1vw;
+    padding-right: 3vw;
+    padding-top: 0.5vw;
+    padding-bottom: 1vw;
+    border:transparent;
+    background-image: url(images/candy.png);
+    background-size: 100% 100%;
+    background-color: transparent;
+}
+
+.goBack:hover {
+    cursor: pointer;
+    font-size: 3vw; 
+}

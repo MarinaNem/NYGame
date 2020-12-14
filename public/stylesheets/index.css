@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    background-image: url(../images/background.jpg);
+    background-size: 100% 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    padding-top: 15vw;
+}
+h1{
+    color:white;
+    padding: 40px;
+    font-size: 5vw;
+    text-shadow: #aab5c0 0.08vw 0.08vw 0.05vw,#aab5c0 0.15vw 0.15vw 0.05vw;
+}
+
+.games{
+    flex-direction: row;
+}
+
+a{
+    color: white;
+    padding: 70px;
+    font-size: 4vw;
+    text-shadow: #aab5c0 0.08vw 0.08vw 0.05vw,#aab5c0 0.13vw 0.13vw 0.05vw;
+}

@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lights</title>
+  <link rel="stylesheet" href="lights.css">
+</head>
+<body>
+  <h1>Light all the lights!</h1>
+  <button class="goBack" onclick="history.back();">Back</button>
+  <section class="field">
+    <img class ="tree" src="images/tree.png" alt="tree">
+    <table>
+      <tr>
+        <td colspan="7" align="center"><div class="bulb"></div></td>
+      </tr>
+      <tr>
+        <td colspan="4" align="right"><div class="bulb"></div></td>
+        <td colspan="2" align="center"><div class="bulb"></div></td>
+      </tr>
+      <tr>
+        <td colspan="3" align="right"><div class="bulb"></div></td>
+        <td colspan="2" align="center"><div class="bulb"></div></td>
+        <td colspan="3" align="left"><div class="bulb"></div></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center"><div class="bulb"></div></td>
+        <td colspan="2" align="center"><div class="bulb"></div></td>
+        <td colspan="2" align="center"><div class="bulb"></div></td>
+        <td colspan="2" align="left"><div class="bulb"></div></td>
+      </tr>
+      <tr>
+        <td colspan="3" align="left"><div class="bulb"></div></td>
+        <td colspan="2" align="left"><div class="bulb"></div></td>
+        <td colspan="2" align="left"><div class="bulb"></div></td>
+        <td colspan="3" align="left"><div class="bulb"></div></td>
+      </tr>
+    </table>
+    <script src="lights.js"></script>
+  </section>
+  <div class="modal">
+    <div class = modal_window> 
+      <button class="close" onclick="this.parentElement.parentElement.style.visibility = 'hidden'">x</button>
+      <h2>Congratulations!</h2>
+    </div>
+  </div>
+</body>
+</html>
